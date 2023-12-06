@@ -3,7 +3,7 @@ body {
   margin: auto 10px;
 }
 
-section {
+.categories {
   margin: auto 10px;
   margin-bottom: 224px;
   font-family: Montserrat;
@@ -11,10 +11,10 @@ section {
   letter-spacing: -0.45px;
   font-size: 21px;
 }
-section .titre-offrecate {
+.categories .titre-offrecate {
   color: var(--secondary, #EA5455);
 }
-section .voirtout {
+.categories .voirtout {
   color: var(--primary, #2D4059);
 }
 
@@ -42,17 +42,17 @@ section .voirtout {
 }
 
 @media screen and (min-width: 1024px) {
-  br {
+  .jaimisuneclassaunbrcestunedinguerie {
     display: none;
   }
-  section {
+  .categories {
     margin: auto 284px;
   }
-  section .titre-offrecate {
+  .categories .titre-offrecate {
     color: var(--secondary, #EA5455);
     margin-bottom: 50px;
   }
-  section .voirtout {
+  .categories .voirtout {
     color: var(--primary, #2D4059);
     margin-left: 15px;
   }

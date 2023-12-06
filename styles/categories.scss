@@ -1,4 +1,4 @@
-section{
+.categories{
     margin: auto 10px;
     margin-bottom: 224px;
     font-family: Montserrat;
@@ -42,7 +42,7 @@ section{
     br{
         display: none;
     }
-    section{
+    .categories{
         margin: auto 284px;
         .titre-offrecate{
             color: var(--secondary, #EA5455);
