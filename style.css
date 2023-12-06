@@ -1,3 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+h1 {
+  font-family: Montserrat, sans-serif;
+}
+
+.Choisir {
+  display: flex;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 284px;
+}
+
+@media (max-width: 800px) {
+  .Choisir {
+    display: flex;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+}
+.choisis-titre {
+  color: orange;
+}
+
+.choisis {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.image-wrapper {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.choisis img {
+  width: 342px;
+  height: 232px;
+}
+
+.image-choisis {
+  color: orange;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
