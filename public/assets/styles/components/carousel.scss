@@ -1,0 +1,46 @@
+// Dans votre fichier carousel.scss
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 50px 0; // Ajustez la marge supérieure selon vos besoins
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  width: 300%; // Nombre d'items * 100%, ajustez en conséquence
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%; // Chaque item occupe 100% de la largeur
+  box-sizing: border-box;
+  background-size: cover; // Ajustez la propriété background-size selon vos besoins
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+#btn-prev,
+#btn-next {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
