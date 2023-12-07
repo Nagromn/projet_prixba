@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
 
-
-<body>
-  <header>
-    <div class="header-container">
+  <body>
+    <header>
+      <div class="header-container">
         <div class="top-banner">
           <div class="logo-container">
-            <img src="logo_color.png" alt="PrixBa Logo">
+            <img src="./images/logos/logo_color.svg" alt="PrixBa Logo" />
             <span>PrixBa</span>
           </div>
-          <div class="slogan">Tous vos besoins à petits prix dans la métropole Lilloise</div>
-        </div>
-      
-        <nav class="navigation-steps">
-            <ul>
-              <li data-step="1">Choix et commande des articles</li>
-              <li data-step="2">Retrait des articles</li>
-              <li data-step="3">Paiement des articles</li>
-            </ul>
-          </nav>
-      
-        <div class="bottom-banner">
-            <div class="bottom-banner-container">
-                <a href="#categories" class="nav-item dropdown">Catégories</a>
-              <div class="search-container">
-                <input type="search" placeholder="Recherche...">
-                <button type="submit">Rechercher</button>
-              </div>
-              <a href="#cataloguenav" class="nav-item">Catalogue</a>
-              <a href="faq-page.html" class="nav-item">Questions fréquentes</a>
-              <a href="#connexion" class="nav-item connexion">Connexion</a>
-              <a href="#cart" class="nav-item">
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-            </div>
-        </div>
-    </div>
-  </header>
-    <div class="product-container">
-        <div class="product-images">
-          <img src="marteau.png" alt="Marteau" class="main-image">
-          <div class="thumbnail-container">
-            <img src="marteau.png" alt="Vue de côté du Marteau" class="thumbnail">
-            <img src="marteau.png" alt="Vue de dessus du Marteau" class="thumbnail">
+          <div class="slogan">
+            Tous vos besoins à petits prix dans la métropole Lilloise
           </div>
         </div>
-        <div class="product-details">
-          <h1>Marteau</h1>
-          <p class="price">1 €</p>
-          <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-          <div class="quantity-selector">
-            <button>-</button>
-            <input type="number" value="1">
-            <button>+</button>
+
+        <nav class="navigation-steps">
+          <ul>
+            <li data-step="1">Choix et commande des articles</li>
+            <li data-step="2">Retrait des articles</li>
+            <li data-step="3">Paiement des articles</li>
+          </ul>
+        </nav>
+
+        <div class="bottom-banner">
+          <div class="bottom-banner-container">
+            <a href="#categories" class="nav-item dropdown">Catégories</a>
+            <div class="search-container">
+              <input type="search" placeholder="Recherche..." />
+              <button type="submit">Rechercher</button>
+            </div>
+            <a href="#cataloguenav" class="nav-item">Catalogue</a>
+            <a href="faq-page.html" class="nav-item">Questions fréquentes</a>
+            <a href="#connexion" class="nav-item connexion">Connexion</a>
+            <a href="#cart" class="nav-item">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="product-container">
+      <div class="product-images">
+        <img src="./images/marteau.png" alt="Marteau" class="main-image" />
+        <div class="thumbnail-container">
+          <img
+            src="./images/marteau.png"
+            alt="Vue de côté du Marteau"
+            class="thumbnail"
+          />
+          <img
+            src="./images/marteau.png"
+            alt="Vue de dessus du Marteau"
+            class="thumbnail"
+          />
+        </div>
+      </div>
+      <div class="product-details">
+        <h1>Marteau</h1>
+        <p class="price">1 €</p>
+        <p class="description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+        <div class="quantity-selector">
+          <button>-</button>
+          <input type="number" value="1" />
+          <button>+</button>
           <button class="add-to-cart">Ajouter au panier</button>
           <button class="like-button">♥</button>
         </div>
@@ -68,64 +83,93 @@
     </div>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-item">
-                    <div class="item-img">
-                        <img src="../projet_prixba/images/bill.svg" alt="item-img" class="item-img">
-                    </div>
-                    <div class="item-infos">
-                        <h2 class="item-title">Articles à petit prix</h2>
-                        <p class="item-desc">La majorité des produits sont<br> à 1 euro</p>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-img">
-                        <img src="../projet_prixba/images/check.svg" alt="item-img" class="item-img">
-                    </div>
-                    <div class="item-infos">
-                        <h2 class="item-title">Achats sans soucis</h2>
-                        <p class="item-desc">Chaque commande est<br> fournis mains à mains</p>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-img">
-                        <img src="../projet_prixba/images/tag.svg" alt="item-img" class="item-img">
-                    </div>
-                    <div class="item-infos">
-                        <h2 class="item-title">Paiement sécurisé</h2>
-                        <p class="item-desc">Payez sans vous souciez lors<br> du retrait</p>
-                    </div>
-                </div>
-                <div class="footer-item">
-                    <div class="item-img">
-                        <img src="../projet_prixba/images/truck.svg" alt="item-img" class="item-img">
-                    </div>
-                    <div class="item-infos">
-                        <h2 class="item-title">Livraison Lilloise</h2>
-                        <p class="item-desc">Ce que vous voulez, préparé pour<br> les lillois et les alentours</p>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-item">
+            <div class="item-img">
+              <img
+                src="./images/icons/bill.svg"
+                alt="item-img"
+                class="item-img"
+              />
             </div>
-            <div class="footer-bot">
-                <div class="footer-links">
-                    <ul class="left-side">
-                        <li>Accueil</li>
-                        <li>Catalogue</li>
-                        <li>Questions fréquentes</li>
-                    </ul>
-                    <ul class="right-side">
-                        <li>Première visite</li>
-                        <li>Livraison retrait</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                
+            <div class="item-infos">
+              <h2 class="item-title">Articles à petit prix</h2>
+              <p class="item-desc">
+                La majorité des produits sont<br />
+                à 1 euro
+              </p>
             </div>
-            <div class="footer-legals">
-                <p>Mentions légales | Conditions générales d’utilisation et de ventes</p>
+          </div>
+          <div class="footer-item">
+            <div class="item-img">
+              <img
+                src="./images/icons/check.svg"
+                alt="item-img"
+                class="item-img"
+              />
             </div>
+            <div class="item-infos">
+              <h2 class="item-title">Achats sans soucis</h2>
+              <p class="item-desc">
+                Chaque commande est<br />
+                fournis mains à mains
+              </p>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="item-img">
+              <img
+                src="./images/icons/tag.svg"
+                alt="item-img"
+                class="item-img"
+              />
+            </div>
+            <div class="item-infos">
+              <h2 class="item-title">Paiement sécurisé</h2>
+              <p class="item-desc">
+                Payez sans vous souciez lors<br />
+                du retrait
+              </p>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div class="item-img">
+              <img
+                src="./images/icons/truck.svg"
+                alt="item-img"
+                class="item-img"
+              />
+            </div>
+            <div class="item-infos">
+              <h2 class="item-title">Livraison Lilloise</h2>
+              <p class="item-desc">
+                Ce que vous voulez, préparé pour<br />
+                les lillois et les alentours
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="footer-bot">
+          <div class="footer-links">
+            <ul class="left-side">
+              <li>Accueil</li>
+              <li>Catalogue</li>
+              <li>Questions fréquentes</li>
+            </ul>
+            <ul class="right-side">
+              <li>Première visite</li>
+              <li>Livraison retrait</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legals">
+          <p>
+            Mentions légales | Conditions générales d’utilisation et de ventes
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

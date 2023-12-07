@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
-@import "../styles/reset";
-@import "../styles/header"; 
-@import "../styles/footer"; 
-@import "../styles/home"; 
-@import "../styles/product"; 
-@import "../styles/products"; 
-@import "../styles/categories"; 
-@import "../styles/choisir"; 
-@import "../styles/general";
-@import "../styles/faq"; 
+@import "./reset";
+@import "./header";
+@import "./footer";
+@import "./home";
+@import "./product";
+@import "./products";
+@import "./categories";
+@import "./choisir";
+@import "./general";
+@import "./faq";
+@import "./components/carousel.scss";
