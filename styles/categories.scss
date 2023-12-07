@@ -5,6 +5,9 @@
     line-height: 33px;
     letter-spacing: -0.45px;
     font-size: 21px;
+    max-width: 1130px;
+    margin: 0 auto;
+    padding:20px 10px;
     .titre-offrecate{
         color: var(--secondary, #EA5455);
     }
@@ -43,7 +46,6 @@
         display: none;
     }
     .categories{
-        margin: auto 284px;
         .titre-offrecate{
             color: var(--secondary, #EA5455);
             margin-bottom: 50px;
