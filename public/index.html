@@ -8,42 +8,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="top-banner">
-        <div class="logo-container">
-          <img src="./images/logos/logo_color.png" alt="PrixBa Logo" />
-          <span>PrixBa</span>
+      <div class="header-container">
+        <div class="top-banner">
+          <div class="logo-container">
+            <img src="logo_color.png" alt="PrixBa Logo" />
+            <span>PrixBa</span>
+          </div>
+          <div class="slogan">
+            Tous vos besoins à petits prix dans la métropole Lilloise
+          </div>
         </div>
-        <div class="slogan">
-          Tous vos besoins à petits prix dans la métropole Lilloise
-        </div>
-      </div>
 
-      <nav class="navigation-steps">
-        <ul>
-          <li data-step="1">Choix et commande des articles</li>
-          <li data-step="2">Retrait des articles</li>
-          <li data-step="3">Paiement des articles</li>
-        </ul>
-      </nav>
+        <nav class="navigation-steps">
+          <ul>
+            <li data-step="1">Choix et commande des articles</li>
+            <li data-step="2">Retrait des articles</li>
+            <li data-step="3">Paiement des articles</li>
+          </ul>
+        </nav>
 
-      <div class="bottom-banner">
-        <a href="#categories" class="nav-item dropdown">Catégories</a>
-        <div class="search-container">
-          <input type="search" placeholder="Recherche..." />
-          <button type="submit">Rechercher</button>
+        <div class="bottom-banner">
+          <div class="bottom-banner-container">
+            <a href="#categories" class="nav-item dropdown">Catégories</a>
+            <div class="search-container">
+              <input type="search" placeholder="Recherche..." />
+              <button type="submit">Rechercher</button>
+            </div>
+            <a href="#cataloguenav" class="nav-item">Catalogue</a>
+            <a href="faq-page.html" class="nav-item">Questions fréquentes</a>
+            <a href="#connexion" class="nav-item connexion">Connexion</a>
+            <a href="#cart" class="nav-item">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
         </div>
-        <a href="#cataloguenav" class="nav-item">Catalogue</a>
-        <a href="#questions-frequentes" class="nav-item"
-          >Questions fréquentes</a
-        >
-        <a href="#connexion" class="nav-item connexion">Connexion</a>
-        <a href="#cart" class="nav-item">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
       </div>
     </header>
 
@@ -386,13 +388,32 @@
         </div>
       </div>
     </section>
+    <div class="Choisir">
+      <h1 class="choisis-titre">Avoir le choix chez Prix Marché</h1>
+      <div class="choisis">
+        <div class="image-wrapper">
+          <img src="https://i.goopics.net/ei9lfn.jpg" alt="Image 1" />
+          <p class="image-choisis">Je choisis</p>
+        </div>
+
+        <div class="image-wrapper">
+          <img src="https://i.goopics.net/xittou.jpg" alt="Image 2" />
+          <p class="image-choisis">Je choisis</p>
+        </div>
+
+        <div class="image-wrapper">
+          <img src="https://i.goopics.net/2b57kg.jpg" alt="Image 3" />
+          <p class="image-choisis">Je choisis</p>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <div class="footer-top">
           <div class="footer-item">
             <div class="item-img">
               <img
-                src="./images/icons/bill.svg"
+                src="../projet_prixba/images/bill.svg"
                 alt="item-img"
                 class="item-img"
               />
@@ -408,7 +429,7 @@
           <div class="footer-item">
             <div class="item-img">
               <img
-                src="./images/icons/check.svg"
+                src="../projet_prixba/images/check.svg"
                 alt="item-img"
                 class="item-img"
               />
@@ -424,7 +445,7 @@
           <div class="footer-item">
             <div class="item-img">
               <img
-                src="./images/icons/tag.svg"
+                src="../projet_prixba/images/tag.svg"
                 alt="item-img"
                 class="item-img"
               />
@@ -440,7 +461,7 @@
           <div class="footer-item">
             <div class="item-img">
               <img
-                src="./images/icons/truck.svg"
+                src="../projet_prixba/images/truck.svg"
                 alt="item-img"
                 class="item-img"
               />
@@ -475,6 +496,5 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
