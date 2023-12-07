@@ -1,19 +1,19 @@
 .categories{
-    margin: auto 10px;
-    margin-bottom: 224px;
+    margin: 15px;
     font-family: Montserrat;
     line-height: 33px;
     letter-spacing: -0.45px;
     font-size: 21px;
     max-width: 1130px;
-    margin: 0 auto;
     padding:20px 10px;
     .titre-offrecate{
         color: var(--secondary, #EA5455);
+        font-weight: bold;
     }
     .voirtout{
         color: var(--primary, #2D4059);
     }
+    
 }
 
 .custom-box {
@@ -46,6 +46,7 @@
         display: none;
     }
     .categories{
+        margin: 0 auto;
         .titre-offrecate{
             color: var(--secondary, #EA5455);
             margin-bottom: 50px;
