@@ -24,6 +24,9 @@
     line-height: 17px;
     letter-spacing: -0.015em;
     text-align: right;
+    margin:0 auto;
+    justify-content: center;
+    max-width: 1680px;
   }
   
   .logo-container img {
@@ -40,8 +43,12 @@
   .slogan {
     
     font-size: 1em;
+    margin-left:auto;
   }
-  
+  .navigation-steps{
+    max-width: 1680px;
+    margin: 0 auto;
+  }
   .navigation-steps ul {
     list-style: none;
     display: flex;
@@ -76,11 +83,15 @@ margin-top: -30px;
   }
   
   .bottom-banner {
-    display: flex;
-    align-items: center;
-    padding: 1em;
     background-color: #2D4059;
-    justify-content: space-between;
+    .bottom-banner-container{
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1100px;
+    }
     
   }
   
