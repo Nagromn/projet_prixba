@@ -1,0 +1,79 @@
+.best-seller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 30px;
+}
+
+h2 {
+  color: #ea5455;
+  margin: 20px;
+}
+
+.categories {
+  margin: auto 10px;
+  margin-bottom: 224px;
+  font-family: Montserrat;
+  line-height: 33px;
+  letter-spacing: -0.45px;
+  font-size: 21px;
+  .titre-offrecate {
+    color: var(--secondary, #ea5455);
+  }
+  .voirtout {
+    color: var(--primary, #2d4059);
+  }
+}
+
+.custom-box {
+  border: 2px solid #2d4059;
+  background-color: #2d4059;
+  border-radius: 25px;
+  width: 157.033px;
+  height: 155.11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title-box {
+    margin: 10px 0 0;
+    font-size: 15px;
+    color: var(--third, #e5e5e5);
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .jaimisuneclassaunbrcestunedinguerie {
+    display: none;
+  }
+  .categories {
+    margin: auto 284px;
+    .titre-offrecate {
+      color: var(--secondary, #ea5455);
+      margin-bottom: 50px;
+    }
+    .voirtout {
+      color: var(--primary, #2d4059);
+      margin-left: 15px;
+    }
+  }
+  .voirtout {
+    font-size: 15px;
+  }
+
+  .custom-box {
+    width: 165px;
+    height: 163px;
+  }
+
+  .flex-container {
+    gap: 20px;
+  }
+}

@@ -236,6 +236,18 @@ footer .footer-container .footer-legals p {
     text-align: center;
   }
 }
+.best-seller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 30px;
+}
+
+h2 {
+  color: #ea5455;
+  margin: 20px;
+}
+
 .categories {
   margin: auto 10px;
   margin-bottom: 224px;
@@ -245,15 +257,15 @@ footer .footer-container .footer-legals p {
   font-size: 21px;
 }
 .categories .titre-offrecate {
-  color: var(--secondary, #EA5455);
+  color: var(--secondary, #ea5455);
 }
 .categories .voirtout {
-  color: var(--primary, #2D4059);
+  color: var(--primary, #2d4059);
 }
 
 .custom-box {
-  border: 2px solid #2D4059;
-  background-color: #2D4059;
+  border: 2px solid #2d4059;
+  background-color: #2d4059;
   border-radius: 25px;
   width: 157.033px;
   height: 155.11px;
@@ -265,7 +277,7 @@ footer .footer-container .footer-legals p {
 .custom-box .title-box {
   margin: 10px 0 0;
   font-size: 15px;
-  color: var(--third, #E5E5E5);
+  color: var(--third, #e5e5e5);
 }
 
 .flex-container {
@@ -282,11 +294,11 @@ footer .footer-container .footer-legals p {
     margin: auto 284px;
   }
   .categories .titre-offrecate {
-    color: var(--secondary, #EA5455);
+    color: var(--secondary, #ea5455);
     margin-bottom: 50px;
   }
   .categories .voirtout {
-    color: var(--primary, #2D4059);
+    color: var(--primary, #2d4059);
     margin-left: 15px;
   }
   .voirtout {
@@ -300,49 +312,69 @@ footer .footer-container .footer-legals p {
     gap: 20px;
   }
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-}
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  margin: 50px 0;
-  overflow: hidden;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel {
   display: flex;
-  width: 300%;
-  transition: transform 0.5s ease-in-out;
+  justify-content: center; /* Adjusted to space between cards */
+  align-items: center;
+  overflow-x: auto;
+  margin: 0 15px;
+  width: 100%; /* Added to make sure the carousel takes the full width */
 }
 
-.carousel-item {
-  flex: 0 0 100%;
+.card {
   box-sizing: border-box;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0 30px;
 }
 
-.controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
+.card img {
+  width: 225px;
+  height: 150px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.card-content h3,
+.card-content > div {
+  margin-bottom: 10px;
+}
+
+.card-content > div {
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
+  align-items: center;
+}
+
+.carousel-control {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: orange;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.stock {
+  color: #70d881;
 }
 
 #btn-prev,
 #btn-next {
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  margin: 0 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

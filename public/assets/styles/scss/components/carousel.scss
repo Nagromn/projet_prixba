@@ -1,46 +1,64 @@
-// Dans votre fichier carousel.scss
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
-}
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  margin: 50px 0; // Ajustez la marge supérieure selon vos besoins
-  overflow: hidden;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel {
   display: flex;
-  width: 300%; // Nombre d'items * 100%, ajustez en conséquence
-  transition: transform 0.5s ease-in-out;
+  justify-content: center; /* Adjusted to space between cards */
+  align-items: center;
+  overflow-x: auto;
+  margin: 0 15px;
+  width: 100%; /* Added to make sure the carousel takes the full width */
 }
 
-.carousel-item {
-  flex: 0 0 100%; // Chaque item occupe 100% de la largeur
+.card {
   box-sizing: border-box;
-  background-size: cover; // Ajustez la propriété background-size selon vos besoins
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0 30px;
 }
 
-.controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
+.card img {
+  width: 225px;
+  height: 150px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.card-content h3,
+.card-content > div {
+  margin-bottom: 10px;
+}
+
+.card-content > div {
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
+  align-items: center;
+}
+
+.carousel-control {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: orange;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.stock {
+  color: #70d881;
 }
 
 #btn-prev,
 #btn-next {
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  margin: 0 30px;
 }

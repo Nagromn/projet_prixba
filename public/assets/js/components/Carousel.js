@@ -1,72 +1,92 @@
-// Carousel.js
+// Carousel
+
 export const Carousel = () => {
-  const carousel = document.querySelector(".carousel");
-  const imagePaths = [
-    "images/products/bricolage_jardinage_gant_de_protection.png",
-    "images/products/bricolage_marteau.png",
-    "images/products/bricolage_jardinage_secateur.png",
-    "images/products/fourniture_agenda.png",
-    "images/products/fourniture_ciseaux.png",
-    "images/products/fourniture_support_ecriture.png",
-    "images/products/jeux_lego.png",
-    "images/products/jeux_tracteur_ferme.png",
-    "images/products/jeux_voiture.png",
-  ];
+  // Selects the card container and the cards themselves
+  const cardContainer = document.querySelector(".card-container");
+  const cards = cardContainer.querySelectorAll(".card");
 
-  const displayedImages = [];
+  // Selects the previous and next navigation buttons
+  const btnPrev = cardContainer.querySelector("#btn-prev");
+  const btnNext = cardContainer.querySelector("#btn-next");
+
+  // Defines the number of cards to display per page for each type of device
+  const cardsPerPageDesktop = 4;
+  const cardsPerPageTablet = 2;
+  const cardsPerPageMobile = 1;
+
+  // Initializes the current index and the number of cards per page
   let currentIndex = 0;
+  let cardsPerPage = getCardsPerPage();
 
+  // Function to update the carousel display
   function updateCarousel() {
-    carousel.innerHTML = "";
-    displayedImages.forEach((imagePath) => {
-      const imgElement = document.createElement("img");
-      imgElement.src = imagePath;
-      imgElement.alt = `Image ${currentIndex + 1}`;
+    cards.forEach((card, index) => {
+      const isVisible =
+        index >= currentIndex && index < currentIndex + cardsPerPage;
 
-      // Redimensionner la taille de l'image et ajouter de l'espace horizontal
-  imgElement.style.width = "200px"; // Ajustez la largeur selon vos besoins
-  imgElement.style.height = "200px"; // Ajustez la hauteur selon vos besoins
-  imgElement.style.marginRight = "20px"; // Ajustez l'espace horizontal à droite de chaque image
-  imgElement.style.marginLeft = "20px"; // Ajustez l'espace horizontal à gauche de chaque image
-
-      carousel.appendChild(imgElement);
+      card.style.display = isVisible ? "block" : "none";
     });
   }
 
+  // Function to move to the next image
   function nextImage() {
-    currentIndex = (currentIndex + 1) % imagePaths.length;
+    currentIndex = (currentIndex + 1) % cards.length;
 
-    // Réinitialiser la liste avant d'ajouter de nouvelles images
-    displayedImages.length = 0;
+    // If we go back to the first card, readjust the number of cards per page
+    if (currentIndex === 0) {
+      cardsPerPage = getCardsPerPage();
+    }
 
-    // Ajouter les nouvelles images
-    for (let i = 0; i < 4; i++) {
-      displayedImages.push(imagePaths[(currentIndex + i) % imagePaths.length]);
+    // If we exceed the last visible card, go back to the first
+    if (currentIndex + cardsPerPage > cards.length) {
+      currentIndex = 0;
     }
 
     updateCarousel();
   }
 
+  // Function to go back to the previous image
   function prevImage() {
-    currentIndex = (currentIndex - 1 + imagePaths.length) % imagePaths.length;
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
 
-    // Réinitialiser la liste avant d'ajouter de nouvelles images
-    displayedImages.length = 0;
+    // If we go back to the last card, readjust the number of cards per page
+    if (currentIndex === 0) {
+      cardsPerPage = getCardsPerPage();
+    }
 
-    // Ajouter les nouvelles images
-    for (let i = 0; i < 4; i++) {
-      displayedImages.push(imagePaths[(currentIndex + i) % imagePaths.length]);
+    // If we exceed the last visible card, go back to the last card
+    if (currentIndex + cardsPerPage > cards.length) {
+      currentIndex = cards.length - cardsPerPage;
     }
 
     updateCarousel();
   }
 
-  document.getElementById("btn-next").addEventListener("click", nextImage);
-  document.getElementById("btn-prev").addEventListener("click", prevImage);
-
-  // Affiche les premières 4 images au chargement
-  for (let i = 0; i < 4; i++) {
-    displayedImages.push(imagePaths[i]);
+  // Function to determine the number of cards per page based on the window width
+  function getCardsPerPage() {
+    if (window.innerWidth >= 1024) {
+      return cardsPerPageDesktop; // Desktop
+    } else if (window.innerWidth >= 768) {
+      return cardsPerPageTablet; // Tablet
+    } else {
+      return cardsPerPageMobile; // Mobile
+    }
   }
+
+  // Updates the number of cards per page when resizing the window
+  window.addEventListener("resize", () => {
+    const newCardsPerPage = getCardsPerPage();
+    if (newCardsPerPage !== cardsPerPage) {
+      currentIndex = 0; // Reset the index when changing the number of cards per page
+      cardsPerPage = newCardsPerPage;
+      updateCarousel();
+    }
+  });
+
+  // Adds event listeners for the navigation buttons
+  btnPrev.addEventListener("click", prevImage);
+  btnNext.addEventListener("click", nextImage);
+
+  // Initializes the carousel when the page loads
   updateCarousel();
 };
