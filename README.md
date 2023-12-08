@@ -11,5 +11,7 @@ Intégration d'une maquette tout en utilisant git.
 - [ZABETH Romain](https://github.com/Zabesu28)
 
 ## Settings
+
 ### 1 - Compiler le CSS et lancer le watcher
-```sass public/assets/styles/scss/main.scss public/assets/styles/style.css --watch```
+
+`sass public/assets/styles/scss/main.scss public/assets/styles/style.css --watch`
