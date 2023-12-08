@@ -1,0 +1,430 @@
+.products {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+
+  h1 {
+    text-align: center; /* Centrer le texte */
+    font-weight: bold; /* Mettre le texte en gras */
+    margin-bottom: 20px; /* Espacement en dessous du texte */
+  }
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .products {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Style CSS pour la liste des catégories */
+.products-list {
+  list-style-type: none; /* Supprime les puces de liste par défaut */
+  padding: 0;
+  margin: 20px; /* Marge à gauche pour la liste */
+}
+
+@media screen and (max-width: 1500px) {
+  .category-list {
+    list-style-type: none; /* Supprime les puces de liste par défaut */
+    padding: 0;
+    margin: 20px; /* Marge à gauche pour la liste */
+    margin-left: 0%;
+  }
+}
+
+.card-categorie {
+  display: flex;
+  align-items: center;
+}
+
+.category-list h1 {
+  display: flex;
+  align-items: center;
+  width: 123px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.category-item {
+  margin-bottom: 10%; /* Espacement entre les catégories */
+}
+
+/* Style CSS pour les balles colorées */
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Rend les balles circulaires */
+  display: inline-block;
+  margin-right: 10px; /* Espacement entre la balle et le texte */
+}
+
+.red-bullet {
+  background-color: red; /* Couleur rouge pour "Tout" */
+}
+
+.gray-bullet {
+  border: 1px solid gray; /* Bordure bleue pour "Bricolage" et "Outillage" */
+  background-color: white; /* Fond blanc pour la bordure bleue */
+}
+
+/* Style CSS pour le texte en rouge */
+.red-text {
+  color: #ea5455;
+  font-family: Roboto;
+}
+
+/* Style CSS pour le texte en bleu */
+.gray-text {
+  color: #727272;
+  font-family: Roboto;
+}
+
+/* Style CSS pour la catégorie */
+.category {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.rectangle1 {
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 5%;
+  margin-top: 2%;
+  justify-content: space-around;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle1 {
+    flex-direction: column;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 2%;
+    justify-content: space-around;
+    display: flex;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.title-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/* Style CSS pour le bouton */
+.custom-button {
+  display: inline-block;
+  background-color: #ea5455; /* Couleur de fond rouge */
+  color: white; /* Couleur du texte blanc */
+  border: none; /* Pas de bordure */
+  border-radius: 9px; /* Coins arrondis */
+  position: relative; /* Position relative pour le contenu enfant (la flèche) */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 237px;
+  height: 46px;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.svg1 {
+  margin-right: 10%;
+}
+
+.svg2 {
+  margin-top: 7%;
+}
+
+.svg3 {
+  margin-top: 7%;
+}
+
+.svg6 {
+  margin-right: 3%;
+  height: 18px;
+  width: 18px;
+  margin-bottom: 12%;
+}
+
+.custom-button h1 {
+  width: 175px;
+  flex-shrink: 0;
+  color: var(--third, #e5e5e5);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  margin-bottom: 0;
+}
+
+.rectangle2 {
+  width: 838px;
+  height: 233px;
+  box-shadow: 0px 0px 19px 0px #0000001a;
+  margin-top: 10%;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle2 {
+    width: 250px;
+    height: 200px;
+    box-shadow: 0px 0px 19px 0px #0000001a;
+    margin-top: 10%;
+    display: flex;
+  }
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9%;
+  margin-top: 5%;
+}
+
+.card2 h2 {
+  margin-top: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 2%;
+  }
+}
+
+.rectangle2 h1 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  margin-left: 1%;
+}
+
+.rectangle2 h2 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  color: rgb(23, 223, 23);
+}
+
+.rectangle2 h3 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin-top: 5%;
+}
+
+.Marteau-picture2 {
+  width: 220px;
+  height: 186px;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 1000px) {
+  .Marteau-picture2 {
+    width: 110px;
+    height: 180px;
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+}
+
+.Marteau-picture3 {
+  width: 218px;
+  height: 184px;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.Marteau-picture4 {
+  width: 218px;
+  height: 184px;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.Marteau-picture5 {
+  width: 218px;
+  height: 184px;
+  margin-top: 10%;
+  margin-left: 7%;
+}
+
+.card {
+  display: flex;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+.card h2 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: right;
+  color: rgb(39, 196, 39);
+  margin-right: 12%;
+}
+
+.rectangle3 {
+  width: 263px;
+  display: flex;
+  box-shadow: 0px 0px 19px 0px #0000001a;
+  flex-direction: column;
+  margin-right: 5%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle3 {
+    width: 263px;
+    display: flex;
+    box-shadow: 0px 0px 19px 0px #0000001a;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-right: 0%;
+  }
+}
+
+.card3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.card4 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.card5 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+
+.rectangle3 h1 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin-left: 8%;
+}
+.rectangle4 {
+  width: 263px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 19px 0px #0000001a;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle4 {
+    width: 263px;
+    display: flex;
+    box-shadow: 0px 0px 19px 0px #0000001a;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+}
+
+.rectangle4 h1 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin-left: 8%;
+}
+.rectangle5 {
+  width: 263px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 19px 0px #0000001a;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .rectangle5 {
+    width: 263px;
+    display: flex;
+    box-shadow: 0px 0px 19px 0px #0000001a;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+}
+
+.rectangle5 h1 {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin-left: 8%;
+}
