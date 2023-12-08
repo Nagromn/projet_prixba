@@ -1,13 +1,4 @@
 
-        /* Styles CSS pour la page */
-        body {
-            background-color: #fff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
         .products {
             background-color: #fff;
             font-family: Arial, sans-serif;
@@ -36,7 +27,6 @@
             list-style-type: none; /* Supprime les puces de liste par défaut */
             padding: 0;
             margin: 20px; /* Marge à gauche pour la liste */
-            margin-left: 15%;
         }
 
         @media screen and (max-width: 1500px) {
@@ -189,6 +179,7 @@
             margin-right: 3%;
             height: 18px;
             width: 18px;
+            margin-bottom: 12%;
         }
 
         .custom-button h1{
@@ -200,7 +191,7 @@
             font-style: normal;
             font-weight: 400;
             letter-spacing: -0.3px;
-            margin-top: 20px;
+            margin-bottom: 0;
         }
 
         .rectangle2 {
@@ -224,8 +215,12 @@
         .card2{
             display: flex;
             flex-direction: column;
-            margin-left: 5%;
-            margin-top: 2%;
+            margin-left: 9%;
+            margin-top: 5%;
+        }
+
+        .card2 h2{
+            margin-top:35%
         }
 
         @media screen and (max-width: 1000px) {
@@ -256,7 +251,6 @@
             letter-spacing: -0.015em;
             text-align: left;
             color: rgb(23, 223, 23);
-            margin-top: 5%;
         }
 
         .rectangle2 h3{
