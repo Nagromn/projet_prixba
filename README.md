@@ -1,5 +1,15 @@
 # projet_prixba
 
+Réalisation d'une maquette tout en utilisant git.
+
+## Auteurs
+
+- [DINGIVAL Maxime](https://github.com/Wakksou)
+- [WATTIER Morgan](https://github.com/Nagromn)
+- [MEAS Pinya](https://github.com/mileina)
+- [SECHI Vincent](https://github.com/VincentSechi)
+- [ZABETH Romain](https://github.com/Zabesu28)
+
 ## Settings
 
 ### 1 - Installation des dépendances
