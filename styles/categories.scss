@@ -1,0 +1,71 @@
+.categories{
+    margin: 15px;
+    font-family: Montserrat;
+    line-height: 33px;
+    letter-spacing: -0.45px;
+    font-size: 21px;
+    max-width: 1130px;
+    padding:20px 10px;
+    .titre-offrecate{
+        color: var(--secondary, #EA5455);
+    }
+    .voirtout{
+        color: var(--primary, #2D4059);
+    }
+    
+}
+
+.custom-box {
+    border: 2px solid #2D4059;
+    background-color: #2D4059;
+    border-radius: 25px;
+    width: 157.033px;
+    height: 155.11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title-box{
+        margin: 10px 0 0;
+        font-size: 15px;
+        color: var(--third, #E5E5E5);
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+  }
+
+  @media screen and (min-width: 1024px) {
+    .jaimisuneclassaunbrcestunedinguerie{
+        display: none;
+    }
+    .categories{
+        margin: 0 auto;
+        .titre-offrecate{
+            color: var(--secondary, #EA5455);
+            margin-bottom: 50px;
+        }
+        .voirtout{
+            color: var(--primary, #2D4059);
+            margin-left: 15px;
+        }
+    }
+    .voirtout{
+        font-size: 15px;
+    }
+
+    .custom-box{
+        width: 165px;
+        height: 163px;
+    }
+
+    .flex-container{
+        gap: 20px;
+    }
+
+  }
