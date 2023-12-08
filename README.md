@@ -1,6 +1,6 @@
 # projet_prixba
 
-Réalisation d'une maquette tout en utilisant git.
+Intégration d'une maquette tout en utilisant git.
 
 ## Auteurs
 
