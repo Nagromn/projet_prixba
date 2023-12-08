@@ -10,6 +10,9 @@
   }
   .voirtout {
     color: var(--primary, #2d4059);
+    animation-duration: 2s;
+    animation-name: blinkingTitle;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -68,5 +71,16 @@
 
   .flex-container {
     gap: 20px;
+  }
+}
+@keyframes blinkingTitle{
+  0% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1;
   }
 }
